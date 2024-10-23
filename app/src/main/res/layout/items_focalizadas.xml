@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvRecorridos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:cardBackgroundColor="@color/colorPrimaryPastel">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_menu_home"
+                android:contentDescription="Recorrido"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLugarP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lugar poblado: asdfasdf"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvBarrioViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barrio: Juan Perez 1212-112"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvLugarP" />
+
+            <TextView
+                android:id="@+id/tvInformanteViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informante PyV: Juan Perez 1212-112"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvBarrioViv" />
+
+
+            <TextView
+                android:id="@+id/tvInfoTelViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono informante:1212-112"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvInformanteViv" />
+
+            <TextView
+                android:id="@+id/tvJefeVivienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jefe de vivienda: Juan Perez "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvInfoTelViv" />
+
+
+            <TextView
+                android:id="@+id/tvCalleViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calle: 1"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvJefeVivienda" />
+
+            <TextView
+                android:id="@+id/tvEdificioViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edificio: A3"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvCalleViv" />
+
+            <TextView
+                android:id="@+id/tvCuartoViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuarto: 11A"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvEdificioViv" />
+
+            <TextView
+                android:id="@+id/tvProductorViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Productor/Empresa: Jose ALsola"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuartoViv" />
+
+            <TextView
+                android:id="@+id/tvTelProductorViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono productor:1212-112"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductorViv" />
+
+            <TextView
+                android:id="@+id/tvDireccionViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección: "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvTelProductorViv" />
+
+            <TextView
+                android:id="@+id/tvFuenteViv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuente: "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvDireccionViv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

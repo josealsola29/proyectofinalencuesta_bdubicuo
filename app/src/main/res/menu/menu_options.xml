@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_logout"
+        android:title="@string/option_logout" />
+
+    <item
+        android:id="@+id/option_log"
+        android:title="@string/option_log" />
+    <item
+        android:id="@+id/option_logDelete"
+        android:title="@string/option_logDelete" />
+    <item
+        android:id="@+id/option_actualizarEstado"
+        android:title="@string/option_actualizarEstado" />
+</menu>

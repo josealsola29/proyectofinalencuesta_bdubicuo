@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_revisarproductor"
+        android:title="@string/popup_revisarproductor" />
+<!--    <item-->
+<!--        android:id="@+id/popup_eliminarviviendahogar"-->
+<!--        android:title="@string/popup_eliminarviviendahogar" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/popup_editarnhogares"-->
+<!--        android:title="@string/popup_editarnhogares" />-->
+</menu>

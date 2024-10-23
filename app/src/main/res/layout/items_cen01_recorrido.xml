@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCen01_Vivienda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/card_cen01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCen01_Titulo"
+            style="@style/cardViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vivienda 01 (1)" />
+
+        <LinearLayout
+            android:id="@+id/lnCen01_recorrido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--   <TextView
+                       android:layout_gravity="center"
+                       style="@style/preguntasCuestionario"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="4"
+                       android:text="@string/cen01_preg234" />-->
+                <Button
+                    android:id="@+id/btnCen01_condicionVivienda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="Condicion"
+                    app:icon="@drawable/configlogo" />
+
+                <Button
+                    android:id="@+id/btnCen01_Preguntas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="PREGUNTAS"
+                    app:icon="@drawable/ic_send_ok" />
+            </LinearLayout>
+
+            <!--            <RadioGroup
+                            android:id="@+id/rgCen01_condicionViv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rbCen01_OcupantesPresentes"
+                                style="@style/btnCen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rg_cen01_1" />
+
+                            <RadioButton
+                                android:id="@+id/rbCen01_OcupantesAusentes"
+                                style="@style/btnCen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rg_cen01_2" />
+
+                            <RadioButton
+                                android:id="@+id/rbCen01_Desocupadas"
+                                style="@style/btnCen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rg_cen01_3" />
+
+                            <RadioButton
+                                android:id="@+id/rbCen01_DejoDeSer"
+                                style="@style/btnCen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rg_cen01_4" />
+                        </RadioGroup>-->
+
+            <!--            <LinearLayout
+                            android:id="@+id/lnPreguntaOllaComun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/preguntasCuestionario"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cen01_preg5" />
+
+                            <RadioGroup
+                                android:id="@+id/rgCen01_ollaComun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb_ollacomun_si"
+                                    style="@style/btnCen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="Si" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_ollacomun_no"
+                                    style="@style/btnCen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="No" />
+                            </RadioGroup>
+                        </LinearLayout>-->
+
+            <!--        <Button
+                        android:id="@+id/btnCen01_AddNumHogares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(6) Ingrese cantidad de hogares"
+                        android:textSize="15sp"
+                        android:visibility="visible" />-->
+
+            <!--            <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCen01_HogaresRecorrido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/items_cen01_hogaricon" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCen01_Observacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Observación"
+                    app:icon="@drawable/cen01_comment" />
+
+                <ImageButton
+                    android:id="@+id/btnEliminarRecorrido"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@color/grayLight"
+                    android:contentDescription="Eliminar recorrido"
+                    android:src="@drawable/cen01_config" />
+            </LinearLayout>
+
+            <!--        <Button
+                        android:text="Guardar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />-->
+            <!--            <Button-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:backgroundTint="@color/bluePrimaryDark"-->
+            <!--                android:text="Guardar" />-->
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

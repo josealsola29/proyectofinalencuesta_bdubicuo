@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:strokeColor="@color/stroke_color"
+    app:strokeWidth="1dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvCen01_Hogar"
+                style="@style/preguntasFiltroExplotacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hogar 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:stretchColumns="1,2">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="Preguntas"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="Si"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="No"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg0708" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg0708Cultivos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg0708Cultivos"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg0708Cultivos"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg0910_info"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg0910" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg0910Frutales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg0910Frutales"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg0910Frutales"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg1112" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg1112Cultivos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg1112Cultivos"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg1112Cultivos"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg1314" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg1314Ganado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg1314Ganado"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg1314Ganado"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg1516" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg1516Especies"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg1516Especies"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg1516Especies"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg1718" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg1718Pesca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg1718Pesca"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg1718Pesca"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/preguntasFiltroExplotacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/cen01_preg1920" />
+
+                    <RadioGroup
+                        android:id="@+id/rgCen01_preg1920Empresa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_Si_preg1920Empresa"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                        <RadioButton
+                            android:id="@+id/rbCen01_No_preg1920Empresa"
+                            style="@style/rbSiNoCEN01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/lnCen01_TotalProductores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/preguntasCuestionario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/cen01_preg21" />
+
+                <EditText
+                    android:id="@+id/etCen01_numProductores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="0"
+                    android:backgroundTint="@color/black"
+                    android:hint="Ingrese cantidad de productores"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+
+                <TextView
+                    style="@style/preguntasCuestionario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/cen01_preg22" />
+
+                <EditText
+                    android:id="@+id/etCen01_numExplotaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="0"
+                    android:backgroundTint="@color/black"
+                    android:hint="Ingrese cantidad de explotaciones"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

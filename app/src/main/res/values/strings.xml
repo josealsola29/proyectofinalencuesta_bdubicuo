@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Prueba Final Ubicuo</string>
+    <string name="app_name_login">MÓDULO DE EMPADRONAMIENTO</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_surveys">Cuestionarios</string>
+    <string name="title_sendData">Enviar Datos</string>
+    <string name="title_network">Descarga</string>
+    <string name="title_backup">Respaldo</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_user">Usuario</string>
+    <string name="login_title">Iniciar Sesión</string>
+
+
+    <!-- Overriding the default values of the tableView -->
+
+    <string name="option_logout">Cerrar Sesión</string>
+    <string name="option_log">Historial Red</string>
+    <string name="option_logDelete">Historial Eliminado</string>
+    <string name="option_actualizarEstado">Actualizar Estados</string>
+
+    <string name="popup_revisarproductor">Revisar productores | explotaciones</string>
+    <string name="popup_revisarexplotación">Capturar / revisar explotación</string>
+    <string name="popup_listarerrores">Errores de Estructura</string>
+    <string name="popup_eliminarcuestionario">Eliminar Cuestionario</string>
+    <string name="popup_recuperar_cuestionario">Recuperar Cuestionario</string>
+    <!--    <string name="popup_eliminarviviendahogar">Eliminar Vivienda | Empresa</string>-->
+    <!--    <string name="popup_editarnhogares">Editar nº de hogares</string>-->
+    <!--    <string name="body_inicio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh arcu, fringilla at lobortis nec, tristique ultrices lectus. Mauris ac orci porttitor, gravida erat non, rhoncus turpis. Aliquam vitae scelerisque massa. Aliquam fermentum viverra mi id lobortis. Integer mattis, metus quis aliquet eleifend, tortor velit euismod risus, eget malesuada lectus nulla id quam. Aenean eget aliquam mi. Vestibulum sed risus non nunc tincidunt</string>-->
+    <string name="body_menu_encuestas">Módulo que contiene la carga de trabajo para crear cuestionarios, avance de trabajo y visualización de mapas.</string>
+    <string name="body_menu_enviardatos">Módulo para realizar envío de datos al servidor de forma manual. Envío por segmentos o cuestionarios individuales.</string>
+    <string name="body_menu_red">Módulo para descargar mapas y asignaciones de forma manual.</string>
+    <string name="body_menu_respaldo">Módulo para realizar los respaldos de la información almacenada en el dispositivo.</string>
+
+    <string name="rg_cen01_1">Ocupantes Presentes (2)</string>
+    <string name="rg_cen01_2">Ausentes o no está el informante adecuado (Volver a visitar)  (3)</string>
+    <string name="rg_cen01_3">Desocupada (4)</string>
+    <string name="rg_cen01_4">Dejó de ser vivienda (5) </string>
+
+
+    <string name="AppNameFinal">Universidad Tecnológica de Panamá \n Facultad de Ingeniería de Sistemas Computacionales</string>
+    <!--    <string name="cen01_preg5">(5) ¿Las personas que habitan en esta vivienda tienen un solo presupuesto para sus gastos y cocinan juntos?(Olla común)</string>-->
+    <string name="cen01_preg234">Condición de la Vivienda</string>
+    <string name="cen01_preg0708">A) En el 2023, ¿alguien de esta vivienda sembró cultivos anuales o temporales, tales como: arroz, maíz, frijol, yuca, ñame, otoe, caña, hortalizas u otros?</string>
+    <string name="cen01_preg0910_info">¿Alguna de las personas que viven en esta vivienda tiene al día de hoy…</string>
+    <string name="cen01_preg0910">B) Plantas frutales (papaya, banano, aguacate, limón u otros) industriales o permanentes (café, plátano, coco entre otros)?</string>
+    <string name="cen01_preg1112">C) Plantas medicinales, ornamentales y forestales con fines comerciales?</string>
+    <string name="cen01_preg1314">D) Ganado vacuno, porcino, caprino, ovino, equinos, bufalinos, conejos, aves de corral o colmenas?</string>
+    <string name="cen01_preg1516">E) Cultivos de especies acuáticas como peces, molúscos, algas o crustáceos? (acuicultura)</string>
+    <string name="cen01_preg1718">F) ¿Alguna de las personas que residen en esta  vivienda, practica la pesca artesanal o extracción de especies acuáticas?</string>
+    <string name="cen01_preg1920">G) ¿Es responsable de brindar la información de alguna empresa, organización, cooperativa u otros que se dediquen a la actividad agropecuaria?</string>
+    <string name="cen01_preg21">(20) ¿Cuántos productores agropecuarios o pescadores independientes viven en esta vivienda?</string>
+    <string name="cen01_preg22">(21) De 2023 al día de hoy, ¿cuántas explotaciones agropecuarias (fincas, globos de terreno o parcelas), tiene en diferentes corregimientos en total?</string>
+    <string name="titulo_pantalla_viviendas_empresas">Viviendas | Empresas</string>
+    <string name="etiquetaName">VIII Censo Nacional Agropecuario </string>
+    <string name="verificacionRecorrido">Verificar que en la pantalla de Productor | Explotación no haya ningún cuestionario añadido perteneciente al recorrido y que la pregunta sobre cantidad de productores esté en 0. </string>
+    <string name="observacion">Ingrese la observación de sin hacer saltos(enter).</string>
+    <!--    <string name="body_datos_trabajo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh arcu, fringilla at lobortis nec, tristique ultrices lectus. Mauris ac orci porttitor, gravida erat non, rhoncus turpis. Aliquam vitae scelerisque massa. Aliquam fermentum viverra mi id lobortis. Integer mattis</string>-->
+</resources>

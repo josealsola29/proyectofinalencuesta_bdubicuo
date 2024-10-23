@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="catalogo_condicionvivienda">
+        <item>Ocupantes Presentes</item>
+        <item>Ausentes o no está el informante adecuado</item>
+        <item>Desocupada</item>
+        <item>Dejó de ser vivienda </item>
+    </string-array>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.menu2_survey.capture.cen01_viviendas.viviendas.ViviendaHogarDialogFragment">
+
+    <TextView
+        style="@style/pantallasTituloCuestionarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_pantalla_viviendas_empresas" />
+
+    <include layout="@layout/card_infovivienda_hogar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvViviendasHogar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:context=".ui.menu2_survey.capture.cen01_viviendas.viviendas.ViviendaHogarDialogFragment"
+        tools:listitem="@layout/item_viviendashogar" />
+
+<!--    <Button
+        android:id="@+id/btnControlRecorridoCen01"
+        style="@style/btnPantallasVivProd"
+        android:layout_height="wrap_content"
+        android:text="Control de Recorrido"
+        app:backgroundTint="@color/blueSecondary" />-->
+</LinearLayout>

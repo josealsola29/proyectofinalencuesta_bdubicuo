@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="capturaTitulos">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tituloViviendasHogaresList">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/list_captura_hogares</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="cardViewTitulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/cardview_shadow_start_color</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimaryDark</item>
+        <item name="colorAccent">@color/blueSecondary</item>
+
+        <!--PANTALLA COMPLETA-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/backHogar</item>
+    </style>
+
+    <style name="pantallasTitulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="preguntasCuestionario">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="preguntasFiltroExplotacion">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:buttonTint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="rbSiNoCEN01">
+        <item name="android:layout_weight">1</item>
+        <item name="buttonTint">@color/black</item>
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="useMaterialThemeColors">true</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="btnPantallasVivProd">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="pantallasTituloCuestionarios">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TituloProductorExplotaciones">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="etiquetaMapa">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="etiquetaMapa2">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="btnCen">
+        <item name="buttonTint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

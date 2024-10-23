@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_revisarexplotacion"
+        android:title="@string/popup_revisarexplotación" />
+<!--    <item
+        android:id="@+id/popup_listarerrores"
+        android:title="@string/popup_listarerrores" />-->
+    <item
+        android:id="@+id/popup_eliminarcuestionario"
+        android:title="@string/popup_eliminarcuestionario" />
+    <item
+        android:id="@+id/popup_recuperar_cuestionario"
+        android:title="@string/popup_recuperar_cuestionario" />
+</menu>

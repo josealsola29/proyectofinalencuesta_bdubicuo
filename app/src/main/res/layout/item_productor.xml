@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvProductorExplotacion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white2"
+        app:cardCornerRadius="0dp"
+        app:strokeColor="@color/stroke_color"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vInconsistenciasP"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@color/vivienda" />
+
+            <TextView
+                android:id="@+id/tvProductorInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="PROD. 01 | EXPL. 1 (P6=--"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvProductorJefeInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:text="JOSE ALSOLA PRUEBAASDASDASDASD"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!--            <ImageButton
+                            android:id="@+id/ibAddExplotacion"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:background="@color/white"
+                            android:contentDescription="AddExplotacion"
+                            android:minWidth="400dp"
+                            android:minHeight="50dp"
+                            android:src="@drawable/ic_add_circle_outline" />-->
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvExplotaciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/items_explotaciones" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="12dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

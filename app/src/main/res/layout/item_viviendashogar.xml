@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvViviendaHogar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white2"
+        app:cardCornerRadius="0dp"
+        app:strokeColor="@color/stroke_color"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vInconsistencias"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@color/vivienda" />
+
+            <TextView
+                android:id="@+id/tvVHViviendaInfo"
+                style="@style/tituloViviendasHogaresList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="VIV 01 - HOG 1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVHCompletados"
+                style="@style/tituloViviendasHogaresList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Completados: 0"
+                android:textStyle="bold" />
+
+            <TextView
+            android:id="@+id/tvVHPendientes"
+            style="@style/tituloViviendasHogaresList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pendientes: 0"
+            android:textStyle="bold" />
+
+            <!--           <ImageButton
+                           android:id="@+id/ibAddHogar"
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:layout_weight="0.5"
+                           android:background="@color/white"
+                           android:contentDescription="AddHogar"
+                           android:minWidth="400dp"
+                           android:minHeight="50dp"
+                           android:src="@drawable/ic_add_circle_outline" />-->
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHogares"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".ui.menu2_survey.capture.cen01_viviendas.viviendas.ViviendaHogarDialogFragment"
+            tools:listitem="@layout/items_hogares" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="12dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</LinearLayout>

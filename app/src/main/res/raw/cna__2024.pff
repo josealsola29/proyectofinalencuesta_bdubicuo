@@ -1,0 +1,21 @@
+﻿[Run Information]
+Version=CSPro 7.6
+AppType=Entry
+
+[DataEntryInit]
+Interactive=Ask
+Key=
+
+
+[Files]
+Application=.\cna_2024.pen
+
+[ExternalFiles]
+CULTIVOS_DICT=.\CULTIVOS.dat
+DIVPOL_DICT=.\DIVPOL.DAT
+PLANTAS_DICT=.\PLANTAS.dat
+MAQUINARIA_DICT=.\MAQUINARIA.dat
+CATALOGO_47_DICT=.\CATALOGO_47.dat
+CATALOGO_48_DICT=.\CATALOGO_48.dat
+
+[Parameters]

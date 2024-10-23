@@ -1,0 +1,55 @@
+011011. Tractor agrícola                     1. Tractor agrícola 
+022012. Vehículos y transporte:              1. Camiones
+032022. Vehículos y transporte:              2. Camionetas
+042032. Vehículos y transporte:              3. Carros o pick ups
+052042. Vehículos y transporte:              4. Montacarga
+062052. Vehículos y transporte:              5. Carretas o remolques 
+072062. Vehículos y transporte:              6. Helicóptero 
+082072. Vehículos y transporte:              7. Avión
+092082. Vehículos y transporte:              8. Bote
+102092. Vehículos y transporte:              9. Panga
+112102. Vehículos y transporte:              10. Lancha
+122112. Vehículos y transporte:              11. Cayuco
+132122. Vehículos y transporte:              12. Piraguas
+142132. Vehículos y transporte:              13. Otro vehículo
+153013. Implementos de labranza:             1. Arados
+163023. Implementos de labranza:             2. Rastras
+173033. Implementos de labranza:             3. Nivelador
+183043. Implementos de labranza:             4. Cultivador
+193053. Implementos de labranza:             5. Removedor agrícola
+203063. Implementos de labranza:             6. Otro implemento
+214014. Maquinaria para siembra y plantación:1. Sembradora
+224024. Maquinaria para siembra y plantación:2. Transplantadora
+234034. Maquinaria para siembra y plantación:3. Voleadora
+244044. Maquinaria para siembra y plantación:4. Otra de siembra (1)
+254054. Maquinaria para siembra y plantación:5. Otra de siembra (2)
+265015. Maquinaria para mantener el cultivo: 1. Abonadora
+275025. Maquinaria para mantener el cultivo: 2. Nebulizador
+285035. Maquinaria para mantener el cultivo: 3. Pulverizador
+295045. Maquinaria para mantener el cultivo: 4. Podadora
+305055. Maquinaria para mantener el cultivo: 5. Desbrozadora o güiro
+315065. Maquinaria para mantener el cultivo: 6. Fumigadora asperjadora
+325075. Maquinaria para mantener el cultivo: 7. Otra para el cultivo
+336016. Maquinaria para cosecha o poscosecha:1. Cosechador
+346026. Maquinaria para cosecha o poscosecha:2. Removedor
+356036. Maquinaria para cosecha o poscosecha:3. Rastrillo mecánico
+366046. Maquinaria para cosecha o poscosecha:4. Segadora
+376056. Maquinaria para cosecha o poscosecha:5. Trilladora
+386066. Maquinaria para cosecha o poscosecha:6. Piladora
+396076. Maquinaria para cosecha o poscosecha:7. Trapiche
+406086. Maquinaria para cosecha o poscosecha:8. Tostadora
+416096. Maquinaria para cosecha o poscosecha:9. Empacadora
+426106. Maquinaria para cosecha o poscosecha:10. Ensiladora
+436116. Maquinaria para cosecha o poscosecha:11. Otra para cosecha
+447017. Maquinaria forestal móvil:           1. Aserradero móvil  
+457027. Maquinaria forestal móvil:           2. Descortezador móvil
+467037. Maquinaria forestal móvil:           3. Motosierra
+477047. Maquinaria forestal móvil:           4. Talador
+487057. Maquinaria forestal móvil:           5. Arrastrador
+497067. Maquinaria forestal móvil:           6. Otra para forestal (1)
+507077. Maquinaria forestal móvil:           7. Otra para forestal (2)
+518018. Maquinaria y equipo en animales:     1. Máquina de ordeño
+528028. Maquinaria y equipo en animales:     2. Incubadoras
+538038. Maquinaria y equipo en animales:     3. Chutra o brete
+548048. Maquinaria y equipo en animales:     4. Hoyadora
+558058. Maquinaria y equipo en animales:     5. Otra para animales

@@ -3,7 +3,7 @@ package com.example.proyectofinalencuesta_bdubicuo.ui;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.proyectofinalencuesta_bdubicuo.data.CensoRepository;
+import com.example.proyectofinalencuesta_bdubicuo.data.UbicuoRepository;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.ControlRecorridoBackup;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.CuestionariosBackup;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.LogErrors;
@@ -14,36 +14,36 @@ import java.util.List;
 
 public class ConfigurationLoginDialogViewModel extends ViewModel {
 //    private static final String TAG = "ConfigurationLoginDialo";
-    private final CensoRepository censoRepository;
+    private final UbicuoRepository ubicuoRepository;
 
 
     public ConfigurationLoginDialogViewModel() {
-        censoRepository = CensoRepository.getInstance();
+        ubicuoRepository = UbicuoRepository.getInstance();
     }
 
     public LiveData<Resource<List<Segmentos>>> getSegmentosFromServer() {
-        return censoRepository.getSegmentosFromServer();
+        return ubicuoRepository.getSegmentosFromServer();
     }
 
     public LiveData<List<LogErrors>> getLogErrors() {
-        return censoRepository.getLogErrors();
+        return ubicuoRepository.getLogErrors();
     }
     public LiveData<List<ControlRecorridoBackup>> getLogsControlRecorrido() {
-        return censoRepository.getLogsControlRecorrido();
+        return ubicuoRepository.getLogsControlRecorrido();
     }
     public LiveData<List<CuestionariosBackup>> getLogsCuestionarios() {
-        return censoRepository.getLogsCuestionarios();
+        return ubicuoRepository.getLogsCuestionarios();
     }
 
     public LiveData<List<Segmentos>> getAllSegmentosFromBD() {
-        return censoRepository.getAllSegmentosFromBD();
+        return ubicuoRepository.getAllSegmentosFromBD();
     }
 
     public void actualizarEstadosFromServidor(List<Segmentos> segmentos, String usuario, String fechaUltimoSync) {
-        censoRepository.actualizarEstados(segmentos, usuario, fechaUltimoSync);
+        ubicuoRepository.actualizarEstados(segmentos, usuario, fechaUltimoSync);
     }
 /*    public void deleteAll() {
-        censoRepository.eliminarDataBase();
+        ubicuoRepository.eliminarDataBase();
         Log.i(TAG, "Delete: Se eliminó la base de datos.");
     }*/
 }

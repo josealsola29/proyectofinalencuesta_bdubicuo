@@ -43,7 +43,7 @@ import com.example.proyectofinalencuesta_bdubicuo.data.remote.networkEntities.Po
 import com.example.proyectofinalencuesta_bdubicuo.data.remote.networkEntities.PostEnviarRecorrido;
 import com.example.proyectofinalencuesta_bdubicuo.data.remote.networkServices.CensoApiService;
 import com.example.proyectofinalencuesta_bdubicuo.data.remote.networkServices.CensoMapService;
-import com.example.proyectofinalencuesta_bdubicuo.data.repo.CensoDataBase;
+import com.example.proyectofinalencuesta_bdubicuo.data.repo.UbicuoDataBase;
 import com.example.proyectofinalencuesta_bdubicuo.utils.AppExecutors;
 import com.example.proyectofinalencuesta_bdubicuo.utils.ProcessNotifier;
 import com.example.proyectofinalencuesta_bdubicuo.utils.RateLimiter;
@@ -83,9 +83,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CensoRepository {
-    private static final String TAG = "CensoRepository";
-    private static CensoRepository instance;
+public class UbicuoRepository {
+    private static final String TAG = "UbicuoRepository";
+    private static UbicuoRepository instance;
     private final CensoApiService censoApiService;
     private final CensoMapService censoApiServiceMap;
     //    private final UsuariosDao usuariosDao;
@@ -96,9 +96,9 @@ public class CensoRepository {
     private final RateLimiter<String> repoListRateLimit = new RateLimiter<>(30, TimeUnit.MINUTES);
     private String msgResponse;
 
-    public CensoRepository() {
+    public UbicuoRepository() {
         appExecutors = AppExecutors.getInstance();
-        CensoDataBase directorioRoomDatabase = CensoDataBase.getDataBase(MyApp.getInstance());
+        UbicuoDataBase directorioRoomDatabase = UbicuoDataBase.getDataBase(MyApp.getInstance());
 //        usuariosDao = directorioRoomDatabase.getUserDAO();
         segmentosDao = directorioRoomDatabase.getSegmentosDAO();
         cuestionariosDAO = directorioRoomDatabase.getCuestionariosDAO();
@@ -111,9 +111,9 @@ public class CensoRepository {
         censoApiServiceMap = mapClient.getCensoMapService();
     }
 
-    public static CensoRepository getInstance() {
+    public static UbicuoRepository getInstance() {
         if (instance == null) {
-            instance = new CensoRepository();
+            instance = new UbicuoRepository();
         }
         return instance;
     }

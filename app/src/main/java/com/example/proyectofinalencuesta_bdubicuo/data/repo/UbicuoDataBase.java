@@ -34,17 +34,17 @@ import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Usuarios
                 @AutoMigration(from = 0, to = 1)
         }*/)
 @TypeConverters({TypeConverterCens.class})
-public abstract class CensoDataBase extends RoomDatabase {
-    private static volatile CensoDataBase INSTANCE;
+public abstract class UbicuoDataBase extends RoomDatabase {
+    private static volatile UbicuoDataBase INSTANCE;
 
-    public static CensoDataBase getDataBase(final Context context) {
+    public static UbicuoDataBase getDataBase(final Context context) {
         if (INSTANCE == null) {
 
-            synchronized (CensoDataBase.class) {
+            synchronized (UbicuoDataBase.class) {
                 if (INSTANCE == null)
                     INSTANCE = Room.databaseBuilder(
                                     context,
-                                    CensoDataBase.class,
+                                    UbicuoDataBase.class,
                                     "ubicuo_db")
                             .build();
             }
@@ -54,6 +54,5 @@ public abstract class CensoDataBase extends RoomDatabase {
 
     public abstract SegmentosDao getSegmentosDAO();
     public abstract ControlRecorridoDao getViviviendasDAO();
-
     public abstract CuestionariosDao getCuestionariosDAO();
 }

@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyectofinalencuesta_bdubicuo.R;
-import com.example.proyectofinalencuesta_bdubicuo.data.local.constants.Recorridos;
+import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Recorridos;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;

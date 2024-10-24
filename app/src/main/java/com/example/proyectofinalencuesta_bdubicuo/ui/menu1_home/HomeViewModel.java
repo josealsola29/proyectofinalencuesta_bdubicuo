@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.proyectofinalencuesta_bdubicuo.data.CensoRepository;
+import com.example.proyectofinalencuesta_bdubicuo.data.UbicuoRepository;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.ControlRecorrido;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Cuestionarios;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Segmentos;
@@ -17,22 +17,22 @@ import java.util.List;
 
 public class HomeViewModel extends ViewModel {
     private static final String TAG = "CaptureViewModel";
-    private final CensoRepository censoRepository;
+    private final UbicuoRepository ubicuoRepository;
     private LiveData<String> estado;
 
     public HomeViewModel() {
-        censoRepository = new CensoRepository();
+        ubicuoRepository = new UbicuoRepository();
         Log.i(TAG, "CaptureViewModel: Constructor");
     }
 
     public LiveData<Resource<List<Segmentos>>> getSegmentosNuevos(List<Segmentos> segmentosList) {
-        return censoRepository.getSegmentosNuevos(segmentosList);
+        return ubicuoRepository.getSegmentosNuevos(segmentosList);
     }
 
     public void getMapsByRegionZonaSubzona(FragmentActivity fragmentActivity,
                                            ProcessNotifier processNotifier, String region, String zona,
                                            String subzona) {
-        censoRepository.getMapsByRegionZonaSubzona(fragmentActivity, processNotifier, region, zona, subzona);
+        ubicuoRepository.getMapsByRegionZonaSubzona(fragmentActivity, processNotifier, region, zona, subzona);
     }
 
     public LiveData<String> getEstado() {
@@ -44,33 +44,33 @@ public class HomeViewModel extends ViewModel {
     }
 
     public LiveData<List<Segmentos>> getSegmentosMaps() {
-        return censoRepository.getSegmentosMaps();
+        return ubicuoRepository.getSegmentosMaps();
     }
 
     public LiveData<List<Segmentos>> getAllSegmentos() {
-        return censoRepository.getAllSegmentos();
+        return ubicuoRepository.getAllSegmentos();
     }
 
     public LiveData<Resource<List<Segmentos>>> getSegmentosBackup() {
-        return censoRepository.getSegmentosBackup();
+        return ubicuoRepository.getSegmentosBackup();
     }
 
     public LiveData<Resource<List<Segmentos>>> getSegmentosDetalleActualizado() {
-        return censoRepository.getSegmentosDetalleActualizado();
+        return ubicuoRepository.getSegmentosDetalleActualizado();
     }
 
     public LiveData<Resource<List<Cuestionarios>>> getCuestionariosBackup() {
-        return censoRepository.getCuestionariosBackup();
+        return ubicuoRepository.getCuestionariosBackup();
     }
 
     public LiveData<Resource<List<ControlRecorrido>>> getControlRecorridoBackup() {
-        return censoRepository.getControlRecorridoBackup();
+        return ubicuoRepository.getControlRecorridoBackup();
     }
     public void setErrorsLog(String id, String date, String llave) {
-        censoRepository.guardarError(id, date, llave);
+        ubicuoRepository.guardarError(id, date, llave);
     }
 
     public void getInconsistencias(FragmentActivity fragmentActivity, ProcessNotifier processNotifier, String usuario) {
-        censoRepository.getInconsistencias(fragmentActivity, processNotifier, usuario);
+        ubicuoRepository.getInconsistencias(fragmentActivity, processNotifier, usuario);
     }
 }

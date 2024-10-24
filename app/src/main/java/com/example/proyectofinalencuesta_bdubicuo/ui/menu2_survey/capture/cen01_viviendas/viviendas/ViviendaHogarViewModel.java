@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.proyectofinalencuesta_bdubicuo.data.CensoRepository;
+import com.example.proyectofinalencuesta_bdubicuo.data.UbicuoRepository;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.ControlRecorrido;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Cuestionarios;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Segmentos;
@@ -17,43 +17,43 @@ import java.util.List;
 public class ViviendaHogarViewModel extends ViewModel {
     private static final String TAG = "CaptureViewModel";
     //    private LiveData<List<Segmentos>> segmentosList;
-    private final CensoRepository censoRepository;
+    private final UbicuoRepository ubicuoRepository;
 
     public ViviendaHogarViewModel() {
-        censoRepository = new CensoRepository();
+        ubicuoRepository = new UbicuoRepository();
         Log.i(TAG, "CaptureViewModel: Constructor");
     }
 
 
     public LiveData<List<ControlRecorrido>> getViviendasBySegmento(String segmentoID) {
-        return censoRepository.getViviendasBySegmento(segmentoID);
+        return ubicuoRepository.getViviendasBySegmento(segmentoID);
     }
 
 /*    public LiveData<List<Cuestionarios>> getCuestionariosBySegmento2(String segmentoID) {
-        return censoRepository.getCuestionariosBySegmento(segmentoID);
+        return ubicuoRepository.getCuestionariosBySegmento(segmentoID);
     }*/
 
     public LiveData<List<ControlRecorrido>> getRecorridosPorSegmentoOP(String id) {
-        return censoRepository.getRecorridosPorSegmentoOP(id);
+        return ubicuoRepository.getRecorridosPorSegmentoOP(id);
     }
 
 /*    public void addVivienda(ControlRecorrido nuevaVivienda) {
-        censoRepository.addVivienda(nuevaVivienda);
+        ubicuoRepository.addVivienda(nuevaVivienda);
     }*/
 
 
     public void deleteVivienda(String modo, ProcessNotifier processNotifier, Segmentos segmentos,
                                ControlRecorrido cuestionarioSelected, Activity activity) {
-   /*     censoRepository.eliminarCuestionario(modo, processNotifier, segmentos, cuestionarioSelected,
+   /*     ubicuoRepository.eliminarCuestionario(modo, processNotifier, segmentos, cuestionarioSelected,
                 activity);*/
     }
 
     public void updateEstadoSegmento(String id) {
-        censoRepository.updateEstadoSegmento(id);
+        ubicuoRepository.updateEstadoSegmento(id);
     }
 
     public LiveData<List<Cuestionarios>> getTotalCuestionariosCompletadosPendientes(List<String> hogarList) {
-        return censoRepository.getTotalCuestionariosCompletadosPendientes(hogarList);
+        return ubicuoRepository.getTotalCuestionariosCompletadosPendientes(hogarList);
 
     }
 }

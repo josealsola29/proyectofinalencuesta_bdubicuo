@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyectofinalencuesta_bdubicuo.R;
-import com.example.proyectofinalencuesta_bdubicuo.data.local.constants.Recorridos;
+import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Recorridos;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.ControlRecorrido;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Cuestionarios;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Segmentos;

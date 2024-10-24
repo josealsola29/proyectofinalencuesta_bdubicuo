@@ -5,25 +5,25 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.proyectofinalencuesta_bdubicuo.data.CensoRepository;
+import com.example.proyectofinalencuesta_bdubicuo.data.UbicuoRepository;
 import com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities.Segmentos;
 
 import java.util.List;
 
 public class MapsViewModel extends ViewModel {
     private static final String TAG = "CaptureViewModel";
-    private final CensoRepository censoRepository;
+    private final UbicuoRepository ubicuoRepository;
 
     public MapsViewModel() {
-        censoRepository = new CensoRepository();
+        ubicuoRepository = new UbicuoRepository();
         Log.i(TAG, "CaptureViewModel: Constructor");
     }
 
     public LiveData<List<Segmentos>> getAllSubZonas() {
-        return censoRepository.getAllSubZonas();
+        return ubicuoRepository.getAllSubZonas();
     }
 
     public LiveData<List<Segmentos>> getSegmentosSelected(String subZonaSelect, int segmentoID) {
-        return censoRepository.getSegmentosSelected(subZonaSelect, segmentoID);
+        return ubicuoRepository.getSegmentosSelected(subZonaSelect, segmentoID);
     }
 }

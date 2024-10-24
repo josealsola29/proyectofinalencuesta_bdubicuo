@@ -1,4 +1,4 @@
-package com.example.proyectofinalencuesta_bdubicuo.data.local.constants;
+package com.example.proyectofinalencuesta_bdubicuo.data.local.dbEntities;
 
 public class Recorridos {
     private String id;
